@@ -6,6 +6,6 @@ var Schema=mongoose.Schema;
 var userSchema=new Schema({
     name: String,
     email: {type:String,lowercase:true},
-    age: Number,
+    age: {type:Number,default:0},
 })
 
